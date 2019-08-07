@@ -31,7 +31,10 @@ ________  ________  ___  __    ___  ________   ________          ________  _____
     \|_______|\|__|\|__|\|__| \|__|\|__|\|__| \|__|\|_______|        \|_______|\|_______|\|__| \|__|\|__|\|__|\|__| \|__|\|_______|\|__|\|__|   ___ 
                                                                                                                                                |\__\
                                                                                                                                                \|__|
-                                                                                                                                                    ";
+                                                                                                                                                    
+                                                                                                                                                    Hit <ENTER> to start Playing!";
+            System.Console.WriteLine(title);
+            Console.Read();
             System.Console.WriteLine("Welcome to Baking Bonanza!! Type 'Q' or 'quit' to quit at any time, and let Scot with one T win!");
             System.Console.WriteLine("What is your name?");
             string a = Console.ReadLine();
@@ -40,7 +43,6 @@ ________  ________  ___  __    ___  ________   ________          ________  _____
 
 
             while(1==1){
-                System.Console.WriteLine(title);
                 System.Console.WriteLine($"Hi {user.name}! You have {user.prowess} Baking Prowess, What would you like to do?");
                 System.Console.WriteLine("A) Bake");
                 System.Console.WriteLine("B) Learn");
@@ -74,7 +76,7 @@ ________  ________  ___  __    ___  ________   ________          ________  _____
                     }else{
                         System.Console.WriteLine("Please enter a valid selection number!");
                     }
-                }else if(choice == "quit" || choice=="Q"){
+                }else if(choice == "quit" || choice=="Q" || choice == "q" || choice=="Quit"){
                     break;
                 }else{
                     System.Console.WriteLine("Please enter a choice between 'A' or 'B'.");
