@@ -8,18 +8,169 @@ namespace HACKATHON
         {
             
             List<Recipe> NewRecipes = new List<Recipe>();
-            NewRecipes.Add(new Recipe("Bread", 5, "The starting point of all bakers!"));
-            NewRecipes.Add(new Recipe("Cake", 10, "A simple, but delicious treat!"));
-            NewRecipes.Add(new Recipe("Donuts", 25, "Light, tasty, custard-filled treats!"));
-            NewRecipes.Add(new Recipe("Cheesecake", 50, "A decadent, creamy treat!"));
-            NewRecipes.Add(new Recipe("Chocolate Chip Chocolates", 80, "Grandma couldn't make them any better!"));
-            NewRecipes.Add(new Recipe("Pie", 100, "Ooey, gooey, delicoiusness!"));
-            NewRecipes.Add(new Recipe("Cinnamon Roll", 125, "Cinnabon better watch out!"));
-            NewRecipes.Add(new Recipe("Angel Food Cake", 200, "Light, fluffy. You're pretty sure it just melts in your mouth!"));
-            NewRecipes.Add(new Recipe("Baked Alaska", 500, "Shit's on fire!!"));
-            NewRecipes.Add(new Recipe("Baked Salmon", 500, "Hmm.. something smells a bit fishy.."));
-            NewRecipes.Add(new Recipe("Wedding Cake", 1000, "There's a 50/50 chance this won't work!"));
-            NewRecipes.Add(new Recipe("JavaScript Celebration Cake", 15000, "Scot with one T will love this. Right in his face."));
+            NewRecipes.Add(new Recipe("Bread", 5, "The starting point of all bakers!", @"
+                            `.--:://+++/////////////////::-.                                       
+                        .-:/++//:--.``````````````````````..-:/:-`                                  
+                    .:/++/:-.```````````````````````````````````.:/-                                
+                 .:+++:.```````````````-/:.````````````````````````.:.                              
+               -+++/-````````````````/syyys```````-ss+```````````````..             `..`            
+             :++++-````````````````-ss+:-`````````/+osy-```````````````-           -`  `..          
+           .++++/.`````````````````/-`````````````````./````````````````-          ..    -`   ```   
+          /+++++-````````````````````.+++///:````./+/+/.`````````````````.          ..   .-...```.. 
+         ++++++/.``````````...``````+s.     `:-`+/`   ./+````````````````-           -   `. `.`   ..
+        :o+++++-.````````...-.`````:s   `.`   .o``.`    .+```````````````.`          -     -`     ..
+        so+++++-..````````..```````o. `::dds`  :-:hds`   +```````````````..          -     ..    ..:
+       `so+++++:..`````````````````-+ -yhMNh-  /oyNmh`  `/```````````````.`          -`     :....  -
+       `so+++++/...```````````````..+- :sys:  -:::+/.  `/-```````````````-           :.```. -`    .-
+        +oo+++++-...`````````````````.--.``.-:.``-----..`````````..-.````.          :o` .   -....` -
+        .so++++++-...`````````....--..`..--.````````````````````````````-         `/ooo--...--   `.`
+         -so++++++:...`````````````-:-.```````````````::.``````````````-         -oooso       ...`  
+          .ooo+++++/-..`````````````.-`......```````.:--``````````````-`      `:oooos/              
+           `+oo++++++-...`````````````:-   ``.....+dd+```````````````..   `-:+ooooso-               
+            `oooooooo+...``````````````oh+-`      +ms````````````````/ooooooooooso:                 
+           .:+ooossooo-...``````````````smNmhsoosymd.````````````````/ooooossso/.                   
+       `-/o++oossssooo-....`````````````.dmmmmmmmmmo`````````````````:+///:-.                       
+     ./o++oossssssooo+.....``````````````:ysshydmmd-`````````````````.`                             
+    /o++oos++sooooooo-.....```````````````:sssssmd+```````````````````-                             
+   /+++oss-.sooooooo:......````````````````./ooo+-````.```````````````..                            
+   ++++sss`+soooooo/......`````````````````````````..--.```````````````-`                           
+   `+++osssssssoooo-......``````````````````````````````````````````````-                           
+     -/o+oosso..+o+.......``````````````````````````````````````````````.`                          
+      `-::/o+:  +o:.......```````````````````````````````````````````````.                          
+  .....`   `  ...o-.......```````````````````````````````````````````````-                          
+ -```.:. ..`    .o........```````````````````````````````````````````````-                          
+.---...-.-     `+o.........```...`````````````````````````````.....``````-                          
+:.``.....`    .+oo-........``....```````````````````````````....--.``````-                          
+:  -        `/oooo:.........`````````````````````````````````....````````-                          
+`..-.`  `..+oooooo/...........```````````````````````````````````````````.                          
+     ````  .ooooooo-............````````````````````````````````````````-`                          
+            `+sooooo-.............`````````````````````````````````````-.                           
+              ./osooo:.................`````````````````````````````..-`                            
+                 -/oss+:......................`````````````````....-.`                              
+                     .:///:-..................................-...`          "));
+            NewRecipes.Add(new Recipe("Cake", 10, "A simple, but delicious treat!", @"                                            
+                                         ..`     ````                                           
+                                  ``     `-....   .-..-     ```                                   
+                                  `..`.`   .::::.```::::.`` `....`                                  
+                                  --::-.  `..::``.`..::-..-`.-::--                                  
+                                  `://-  -----:-----:-::::-` -//-`                                  
+                                   ..-.  .://:`.://--..-/.`  ..-.`                                  
+                                  `-.`.`  `-:.`.`.-`...--..  -...`                                  
+                                  `.``.  `-..-`.-..-..-.``.  .````                                  
+                                  `.` .  `-` .`.-``...-.``.  ..```                                  
+                                  `.` .  `-``.`.-``...-.``.  ..```                                  
+                                  `.``.```-``.`.-``...-.``.  ..```                                  
+                                  `.``-/-:-` .`.:``.+.-.``/---````                                  
+                             `-/-/y-``-ysy-``-.:/``.o--.``+oo/``.o/--.`                             
+                           -oyhyyyh:` :hhh-``:yy/.`.yso.``+ss/.`.ssooso/.                           
+                          :hhho+yhhysosyhh-` :yy/``.yso-..ossoooossoossso`                          
+                         `ydhhsshhhhsoshyh+//oyyo+/+yysssoossssssss+/ssyh/                          
+                         -dhhhhhhhhhsoshhhhyys+/yyyyyyyss+/ossssssssyyhhso                          
+                         :dhyyyshhhhyyyyyyyyyyssyyyyyyyyysssyyyyo:..-+yh+o`                         
+                     ````:hoso:-yhhhhyyyyyssyyyssssssoossyysoy+-`   ``./o+````                      
+                   `:+:-:yy/:...ohhhhysyo:--/yyyyyyos..-:+++:.`` `` ````-so/:--.`                   
+                ./oyyso+ohy-....-shhs+o:.....:syyy++:```````````````````-sso++ooo/-`                
+              .+hhhhhhhhhhho:....-:/:-........-/+/-..`````````````````.-osssssssssso:`              
+             .yhhhhs++shhhhhhyo/:-...................````````````.--:+ossssssoossssss/              
+             odhhhyo/:+hhhhhhhyhyyyso++//:::--------------:::/++oossssssssss+:-+ssssyy.             
+            .hhhhhhhyyhhhhhhyo/:ohhhhhhhyyyyssssssssssssssssso+ossssssssssssoo+osyyyhh:             
+            :dhhhhhhhhhhhhhhyo+/ohhhhhhhyyyo/:/yyyyyyyyyyyyss+::+ssssssssssssyyyyhhhhyo             
+            /dhhhhhhhhhhhhhhhhyyhhhhhhhhyyys+++yyyyyyyyyyyyysssossssssyyyysooosyhhhhy:y`            
+            /dhhysyhs/yhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyysysyyyyyyys+-`````./yhhy-y`            
+            -dy++yy/..shhhhhhhyyyyyyyyyyyyyyysssssssssssssssssyyyssyys/.       ``./syso`            
+            .yoss+-.../hhhhhhhhyyyyyyo++osyyyyyyyssssss::/ossyyyo+oo/.`       ``````.:`             
+            `//-......-yhhhhhhysoyy+:....-oyyyyyyyyy+o+````.-:/+/:-`````    `````````-`             
+         `.:+o/......../hhhhhs/+s+-........+yyyyyys//s.``````````````````````````````://-.`         
+      `-+shhhyo........./syhy++/-...........+syyyy/++-``````````````````````````````.+ssso+:.       
+     .ohhhhhhhho:.........-::-...............-://:-.`.````````````````````````````.-+ssssssss/`     
+    -hdhhhhyssyhhs+:-..................................```````````````````````..-/ossssssssssso`    
+   .hddhhhs+:--+hhhhyso+::--..............................`````````````...-:/+oossso+//ossssssy/  
+            "));
+            NewRecipes.Add(new Recipe("Donuts", 25, "Light, tasty, custard-filled treats!", @""));
+            NewRecipes.Add(new Recipe("Cheesecake", 50, "A decadent, creamy treat!", @""));
+            NewRecipes.Add(new Recipe("Chocolate Chip Chocolates", 80, "Grandma couldn't make them any better!", @""));
+            NewRecipes.Add(new Recipe("Pie", 100, "Ooey, gooey, delicoiusness!", @"                                                                                                    
+                                              ``                                                    
+                                             ```                                                    
+                                             ```                                                    
+                                             `````                                                  
+                                              ```.`                                                 
+                                       `       ``````       `                                       
+                                      ``        `.```       ``                                      
+                                      `.`        ````      ```                                      
+                                      `````       ```    `````                                      
+                                       `````      ``    `````                                       
+                                        `````    ``    `````                                        
+                                         ````          ````                                         
+                                          ``            ``                                          
+                                         ``              ``                                         
+                                                                                                    
+                                                                                                    
+                                             ``````````                                             
+                                   `.--:::////////////////:::-.``                                   
+                             `.-:://+o/----------------------+o+//::-``                             
+                        `.:://::--ohhs----/o:----/:----:+:---:yhy/--:///::.`                        
+                   `-:///::------:+s+:-:-ohh/---:yy:---:hyo:--:++:-------::///:-.`                  
+              `.:///:::::::::::::::::::::yhy::::ohho:-::shy:::::::::::::::::::::///:-`              
+           `-///::::::::::::::::::::::::::::::::/os/::::::::::::::::::::::::::::::::///:.           
+         -//:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::://-`        
+       .//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::/+-       
+      -+/:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::+- `    
+./////+//////////////////////////////////////////////////////////////////////////////////////+++++/-
+o/////////+++++////////////////////////////////////////////////////////////////////++++++++////////o
+:+///////////////++++++++++/////////////////////////////////////////++++++++++++//////////////////+-
+ ./+++++++/////////////////++++++++++++++++++++++++++++++++++++++++//////////////////////+++/+++/-` 
+    ` .:::+++++++++/++++++++++++++++++++++++++/+++++++++++++++++++/+++++++++++///+++++++/:::        
+       :::::///:-::--:/o++++++/://++++++++++++/+/++++++++++++/::-:/+++++++++:--:---://:::::.        
+       .:::-------:-----:/:-....:...:/++++/:.``-.`.-//+o++/-...:....-:////:----:-------::::`        
+        ::--------:---..........:........`.````-.`````.........:.........------:-------:::-         
+        .::-------:----.........:..........``.`-.`````.........:.........------:-------::/`         
+         -:::-----:----.........:..........````-.`````.........:.........-----:--------::-          
+           `..--::::-.-.........--.........````-.`````.........:.........-----:--:::--.``           
+                  `..---------...-...........``-.````.`........:.....---::----..``                  
+                           ``...---------------::-----------------....``        "));
+            NewRecipes.Add(new Recipe("Cinnamon Roll", 125, "Cinnabon better watch out!", @""));
+            NewRecipes.Add(new Recipe("Angel Food Cake", 200, "Light, fluffy. You're pretty sure it just melts in your mouth!", @""));
+            NewRecipes.Add(new Recipe("Baked Alaska", 500, "Shit's on fire!!", @""));
+            NewRecipes.Add(new Recipe("Baked Salmon", 500, "Hmm.. something smells a bit fishy..", @""));
+            NewRecipes.Add(new Recipe("Wedding Cake", 1000, "There's a 50/50 chance this won't work!", @""));
+            NewRecipes.Add(new Recipe("JavaScript Celebration Cake", 15000, "Scot with one T will love this. Right in his face.", @"
+                                            ..`     ````                                           
+                                    ``     `-....   .-..-     ```                                   
+                                  `..`.`   .::::.```::::.`` `....`                                  
+                                  --::-.  `..::``.`..::-..-`.-::--                                  
+                                  `://-  -----:-----:-::::-` -//-`                                  
+                                   ..-.  .://:`.://--..-/.`  ..-.`                                  
+                                  `-.`.`  `-:.`.`.-`...--..  -...`                                  
+                                  `.``.  `-..-`.-..-..-.``.  .````                                  
+                                  `.` .  `-` .`.-``...-.``.  ..```                                  
+                                  `.` .  `-``.`.-``...-.``.  ..```                                  
+                                  `.``.```-``.`.-``...-.``.  ..```                                  
+                                  `.``-/-:-` .`.:``.+.-.``/---````                                  
+                             `-/-/y-``-ysy-``-.:/``.o--.``+oo/``.o/--.`                             
+                           -oyhyyyh:` :hhh-``:yy/.`.yso.``+ss/.`.ssooso/.                           
+                          :hhho+yhhysosyhh-` :yy/``.yso-..ossoooossoossso`                          
+                         `ydhhsshhhhsoshyh+//oyyo+/+yysssoossssssss+/ssyh/                          
+                         -dhhhhhhhhhsoshhhhyys+/yyyyyyyss+/ossssssssyyhhso                          
+                         :dhyyyshhhhyyyyyyyyyyssyyyyyyyyysssyyyyo:..-+yh+o`                         
+                     ````:hoso:-yhhhhyyyyyssyyyssssssoossyysoy+-`   ``./o+````                      
+                   `:+:-:yy/:...ohhhhysyo:--/yyyyyyos..-:+++:.`` `` ````-so/:--.`                   
+                ./oyyso+ohy-....-shhs+o:.....:syyy++:```````````````````-sso++ooo/-`                
+              .+hhhhhhhhhhho:....-:/:-........-/+/-..`````````````````.-osssssssssso:`              
+             .yhhhhs++shhhhhhyo/:-...................````````````.--:+ossssssoossssss/              
+             odhhhyo/:+hhhhhhhyhyyyso++//:::--------------:::/++oossssssssss+:-+ssssyy.             
+            .hhhhhhhyyhhhhhhyo/:ohhhhhhhyyyyssssssssssssssssso+ossssssssssssoo+osyyyhh:             
+            :dhhhhhhhhhhhhhhyo+/ohhhhhhhyyyo/:/yyyyyyyyyyyyss+::+ssssssssssssyyyyhhhhyo             
+            /dhhhhhhhhhhhhhhhhyyhhhhhhhhyyys+++yyyyyyyyyyyyysssossssssyyyysooosyhhhhy:y`            
+            /dhhysyhs/yhhhhhhhyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyysysyyyyyyys+-`````./yhhy-y`            
+            -dy++yy/..shhhhhhhyyyyyyyyyyyyyyysssssssssssssssssyyyssyys/.       ``./syso`            
+            .yoss+-.../hhhhhhhhyyyyyyo++osyyyyyyyssssss::/ossyyyo+oo/.`       ``````.:`             
+            `//-......-yhhhhhhysoyy+:....-oyyyyyyyyy+o+````.-:/+/:-`````    `````````-`             
+         `.:+o/......../hhhhhs/+s+-........+yyyyyys//s.``````````````````````````````://-.`         
+      `-+shhhyo........./syhy++/-...........+syyyy/++-``````````````````````````````.+ssso+:.       
+     .ohhhhhhhho:.........-::-...............-://:-.`.````````````````````````````.-+ssssssss/`     
+    -hdhhhhyssyhhs+:-..................................```````````````````````..-/ossssssssssso`    
+   .hddhhhs+:--+hhhhyso+::--..............................`````````````...-:/+oossso+//ossssssy/  "));
             Console.Title = "ASCII Art";
             string title = @"
 ________  ________  ___  __    ___  ________   ________          ________  ________  ________   ________  ________   ________  ________  ___       
@@ -31,10 +182,9 @@ ________  ________  ___  __    ___  ________   ________          ________  _____
     \|_______|\|__|\|__|\|__| \|__|\|__|\|__| \|__|\|_______|        \|_______|\|_______|\|__| \|__|\|__|\|__|\|__| \|__|\|_______|\|__|\|__|   ___ 
                                                                                                                                                |\__\
                                                                                                                                                \|__|
-                                                                                                                                                    
-                                                                                                                                                    Hit <ENTER> to start Playing!";
+    Hit <ENTER> to start Playing!";
             System.Console.WriteLine(title);
-            Console.Read();
+            // Console.Read();
             System.Console.WriteLine("Welcome to Baking Bonanza!! Type 'Q' or 'quit' to quit at any time, and let Scot with one T win!");
             System.Console.WriteLine("What is your name?");
             string a = Console.ReadLine();

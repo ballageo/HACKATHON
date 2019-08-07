@@ -6,10 +6,12 @@ namespace HACKATHON
             private string Name;
             private int ProwessCost;
             private string Description;
-            public Recipe(string name, int cost, string descrip) {
+            private string Ascii;
+            public Recipe(string name, int cost, string descrip, string ascii) {
                 Name = name;
                 ProwessCost = cost;
                 Description = descrip;
+                Ascii = ascii;
             }
             public int Cost {
                 get {
@@ -19,6 +21,11 @@ namespace HACKATHON
             public string name {
                 get {
                     return Name;
+                }
+            }
+            public string ASCII{
+                get {
+                    return Ascii;
                 }
             }
         }
