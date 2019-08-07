@@ -19,7 +19,7 @@ namespace HACKATHON
             NewRecipes.Add(new Recipe("Baked Alaska", 500, "Shit's on fire!!"));
             NewRecipes.Add(new Recipe("Baked Salmon", 500, "Hmm.. something smells a bit fishy.."));
             NewRecipes.Add(new Recipe("Wedding Cake", 1000, "There's a 50/50 chance this won't work!"));
-            NewRecipes.Add(new Recipe("JavaScript Celebration Cake", 50000, "Scot with one T will love this. Right in his face."));
+            NewRecipes.Add(new Recipe("JavaScript Celebration Cake", 15000, "Scot with one T will love this. Right in his face."));
             
             System.Console.WriteLine("Welcome to Baking Bonanza!! Type 'Q' or 'quit' to quit at any time, and let Scot with one T win!");
             System.Console.WriteLine("What is your name?");
@@ -27,34 +27,52 @@ namespace HACKATHON
             Baker user = new Baker(a);
             
             while(1==1){
-                System.Console.WriteLine($"Hi {user.name}! What would you like to do?");
+                System.Console.WriteLine($"Hi {user.name}! You have {user.prowess} Baking Prowess, What would you like to do?");
                 System.Console.WriteLine("A) Bake");
                 System.Console.WriteLine("B) Learn");
                 string choice = Console.ReadLine();
+                System.Console.Clear();
                 if (choice == "A"|| choice == "a") {
                     System.Console.WriteLine("What would you like to bake?");
                     for (int i = 0; i < user.recipes.Count; i++) {
-                        System.Console.WriteLine(i + " - " + user.recipes[i].name);
+                        System.Console.WriteLine(i + " - " + user.recipes[i].name + " - Prowess Cost: " + user.recipes[i].Cost); 
                     }
                     string ToBake = Console.ReadLine();
                     if(ToBake == "quit"|| ToBake=="Q"){
                         break;
                     }
                     int intBake = Convert.ToInt32(ToBake);
+                    if(intBake < user.recipes.Count){
+                        user.Bake(user.recipes[intBake]);
+                    }else{
+                        System.Console.WriteLine("Please enter a valid selection number!");
+                    }
                     
-                    user.Bake(user.recipes[intBake]);
-                }
-                if (choice == "B"|| choice == "b") {
+                
+                }else if (choice == "B"|| choice == "b") {
                     System.Console.WriteLine("What would you like to learn?");
                     for (int i = 0; i < NewRecipes.Count; i++) {
                         System.Console.WriteLine(i + " - " + NewRecipes[i].name + " - Prowess Cost: " + NewRecipes[i].Cost);
                     }
                     int ToLearn = Convert.ToInt32(Console.ReadLine());
-                    user.Learn(NewRecipes[ToLearn]);
+                    if(ToLearn < NewRecipes.Count){
+                        user.Learn(NewRecipes[ToLearn]);
+                    }else{
+                        System.Console.WriteLine("Please enter a valid selection number!");
+                    }
+                }else if(choice == "quit" || choice=="Q"){
+                    break;
+                }else{
+                    System.Console.WriteLine("Please enter a choice between 'A' or 'B'.");
                 }
-                if(choice == "quit" || choice=="Q"){
+                if(user.bakewin){
+                    System.Console.WriteLine("You threw JavaScript celebration cake in Scot with one T's face and won the game!!!");
                     break;
                 }
+                if(user.prowess < 0){
+                        System.Console.WriteLine("You lost loser! Try again and next time don't be a Scot with one T!");
+                        break;
+                    }
             }
             // string  = Console.ReadLine();
             
