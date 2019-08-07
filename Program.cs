@@ -20,13 +20,27 @@ namespace HACKATHON
             NewRecipes.Add(new Recipe("Baked Salmon", 500, "Hmm.. something smells a bit fishy.."));
             NewRecipes.Add(new Recipe("Wedding Cake", 1000, "There's a 50/50 chance this won't work!"));
             NewRecipes.Add(new Recipe("JavaScript Celebration Cake", 15000, "Scot with one T will love this. Right in his face."));
-            
+            Console.Title = "ASCII Art";
+            string title = @"
+________  ________  ___  __    ___  ________   ________          ________  ________  ________   ________  ________   ________  ________  ___       
+|\   __  \|\   __  \|\  \|\  \ |\  \|\   ___  \|\   ____\        |\   __  \|\   __  \|\   ___  \|\   __  \|\   ___  \|\_____  \|\   __  \|\  \      
+\ \  \|\ /\ \  \|\  \ \  \/  /|\ \  \ \  \\ \  \ \  \___|        \ \  \|\ /\ \  \|\  \ \  \\ \  \ \  \|\  \ \  \\ \  \\|___/  /\ \  \|\  \ \  \     
+ \ \   __  \ \   __  \ \   ___  \ \  \ \  \\ \  \ \  \  ___       \ \   __  \ \  \\\  \ \  \\ \  \ \   __  \ \  \\ \  \   /  / /\ \   __  \ \  \    
+  \ \  \|\  \ \  \ \  \ \  \\ \  \ \  \ \  \\ \  \ \  \|\  \       \ \  \|\  \ \  \\\  \ \  \\ \  \ \  \ \  \ \  \\ \  \ /  /_/__\ \  \ \  \ \__\   
+   \ \_______\ \__\ \__\ \__\\ \__\ \__\ \__\\ \__\ \_______\       \ \_______\ \_______\ \__\\ \__\ \__\ \__\ \__\\ \__\\________\ \__\ \__\|__|   
+    \|_______|\|__|\|__|\|__| \|__|\|__|\|__| \|__|\|_______|        \|_______|\|_______|\|__| \|__|\|__|\|__|\|__| \|__|\|_______|\|__|\|__|   ___ 
+                                                                                                                                               |\__\
+                                                                                                                                               \|__|
+                                                                                                                                                    ";
             System.Console.WriteLine("Welcome to Baking Bonanza!! Type 'Q' or 'quit' to quit at any time, and let Scot with one T win!");
             System.Console.WriteLine("What is your name?");
             string a = Console.ReadLine();
             Baker user = new Baker(a);
             
+
+
             while(1==1){
+                System.Console.WriteLine(title);
                 System.Console.WriteLine($"Hi {user.name}! You have {user.prowess} Baking Prowess, What would you like to do?");
                 System.Console.WriteLine("A) Bake");
                 System.Console.WriteLine("B) Learn");
