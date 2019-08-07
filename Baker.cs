@@ -12,7 +12,7 @@ namespace HACKATHON
             private List<Recipe> MyRecipes = new List<Recipe>();
             public Baker(string name) {
                 Name = name;
-                BakingProwess = 100;
+                BakingProwess = 10000000;
                 MyRecipes.Add(new Recipe("EzBake-Oven Cookie", 5, "So simple, a Scot with one T could do it!", @"                                                              .://+dh+                              
                                                           :+syyssssssyhds                           
                                                       `:oyysssssssssssssyy+                         
@@ -75,6 +75,7 @@ oo+++++++++++++++/:://///so.ssyhhddhhyhhhhdhso/://::`                   s++++++o
                     System.Console.WriteLine($"You baked the {recipe.name}!");
                     System.Console.WriteLine($"Prowess - {BakingProwess}!");
                     if(recipe.name == "JavaScript Celebration Cake"){
+                        Console.WriteLine("You have defeated Scot with one T!");
                         BakeWin = true;
                     }
                 } else {
