@@ -1,0 +1,11 @@
+C:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.deps.json
+C:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.runtimeconfig.json
+C:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.runtimeconfig.dev.json
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.dll
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.pdb
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.csprojAssemblyReference.cache
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.csproj.CoreCompileInputs.cache
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.AssemblyInfoInputs.cache
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.AssemblyInfo.cs
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.dll
+c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.pdb
