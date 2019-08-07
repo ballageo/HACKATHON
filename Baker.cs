@@ -8,7 +8,9 @@ namespace HACKATHON
             Random rand = new Random();
             private string Name;
             private int BakingProwess;
+            private int BakingBoost;
             private bool BakeWin = false;
+            private List<Utensil> MyUtensils = new List<Utensil>();
             private List<Recipe> MyRecipes = new List<Recipe>();
             public Baker(string name) {
                 Name = name;
@@ -18,11 +20,11 @@ namespace HACKATHON
             }
             public void Learn(Recipe recipe) {
                 int LearnChance = rand.Next(BakingProwess);
-                if (BakingProwess - recipe.Cost/1.6 >= LearnChance/1.15) {
+                if ((BakingProwess - recipe.Cost/1.6) >= LearnChance/1.15) {
                     MyRecipes.Add(recipe);
                     BakingProwess -= recipe.Cost;
                     System.Console.Clear();
-                    System.Console.WriteLine($"You have learned how to bake {recipe.name}! Your prowess is now {BakingProwess}");
+                    System.Console.WriteLine($"You spent {recipe.Cost} Baking Prowess to learn how to bake {recipe.name}!");
                 } else {
                     BakingProwess -= recipe.Cost/2;
                     System.Console.Clear();
@@ -32,11 +34,11 @@ namespace HACKATHON
             
             public void Bake(Recipe recipe) {
                 int BakeChance = rand.Next(BakingProwess);
-                if (BakeChance > recipe.Cost/2) {
+                if (BakeChance + BakingBoost > recipe.Cost/2) {
                     BakingProwess += recipe.Cost;
                     System.Console.Clear();
-                    System.Console.WriteLine($"You baked the {recipe.name}!");
-                    System.Console.WriteLine($"Prowess - {BakingProwess}!");
+                    System.Console.WriteLine($"You baked the {recipe.name}! You gained {recipe.Cost} Baking Prowess!");
+                    // System.Console.WriteLine($"Prowess - {BakingProwess}!");
                     if(recipe.name == "JavaScript Celebration Cake"){
                         BakeWin = true;
                     }
@@ -44,8 +46,21 @@ namespace HACKATHON
                     
                     BakingProwess -= recipe.Cost/2;
                     System.Console.Clear();
-                    System.Console.WriteLine($"You burnt the {recipe.name} to ashes!");
-                    System.Console.WriteLine($"Prowess - {BakingProwess}!");
+                    System.Console.WriteLine($"You burnt the {recipe.name} to ashes! You lost {recipe.Cost/2} Baking Prowess! You suck!");
+                    // System.Console.WriteLine($"Prowess - {BakingProwess}!");
+                }
+            }
+            
+            public void BuyUtensil (Utensil utensil) {
+                if (BakingProwess > utensil.Cost) {
+                    MyUtensils.Add(utensil);
+                    BakingProwess -= utensil.Cost;
+                    BakingBoost += utensil.Boost;
+                    System.Console.Clear();
+                    System.Console.WriteLine($"You bought the {utensil.name} with {utensil.Cost} Baking Prowess! Your BakingBoost is now {BakingBoost}!");
+                } else {
+                    System.Console.Clear();
+                    System.Console.WriteLine($"You are too poor to buy that item. Why don't you go beg on the street, you loser? Your prowess is now {BakingProwess}");
                 }
             }
             public string name {
@@ -64,6 +79,20 @@ namespace HACKATHON
                 }
                 set {
                     ;
+                }
+            }
+            public List<Utensil> utensils {
+                set {
+                    int Boost = 0;
+                    for (var i = 0; i < MyUtensils.Count; i++) {
+                        Boost += MyUtensils[i].Boost;
+                    }
+                    BakingBoost = Boost;
+                }
+            }
+            public int boost {
+                get {
+                    return BakingBoost;
                 }
             }
             public int prowess{
