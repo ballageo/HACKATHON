@@ -2,30 +2,30 @@ namespace HACKATHON
 {
     partial class Program
     {
-        class Recipe {
+        class Utensil {
             private string Name;
             private int ProwessCost;
+            private int ProwessBoost;
             private string Description;
-            private string Ascii;
-            public Recipe(string name, int cost, string descrip, string ascii) {
+            public Utensil(string name, int cost, int boost, string descrip) {
                 Name = name;
                 ProwessCost = cost;
+                ProwessBoost = boost;
                 Description = descrip;
-                Ascii = ascii;
             }
             public int Cost {
                 get {
                     return ProwessCost;
                 }
             }
+            public int Boost {
+                get {
+                    return ProwessBoost;
+                }
+            }
             public string name {
                 get {
                     return Name;
-                }
-            }
-            public string ASCII{
-                get {
-                    return Ascii;
                 }
             }
         }

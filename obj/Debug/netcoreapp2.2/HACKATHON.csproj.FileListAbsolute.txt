@@ -1,11 +1,22 @@
-C:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.deps.json
-C:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.runtimeconfig.json
-C:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.runtimeconfig.dev.json
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.dll
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\bin\Debug\netcoreapp2.2\HACKATHON.pdb
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.csprojAssemblyReference.cache
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.csproj.CoreCompileInputs.cache
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.AssemblyInfoInputs.cache
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.AssemblyInfo.cs
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.dll
-c:\Users\balla\Documents\coding-dojo\C#\HACKATHON\obj\Debug\netcoreapp2.2\HACKATHON.pdb
+C:/Users/balla/Documents/coding-dojo/C#/HACKATHON/bin/Debug/netcoreapp2.2/HACKATHON.deps.json
+C:/Users/balla/Documents/coding-dojo/C#/HACKATHON/bin/Debug/netcoreapp2.2/HACKATHON.runtimeconfig.json
+C:/Users/balla/Documents/coding-dojo/C#/HACKATHON/bin/Debug/netcoreapp2.2/HACKATHON.runtimeconfig.dev.json
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/bin/Debug/netcoreapp2.2/HACKATHON.dll
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/bin/Debug/netcoreapp2.2/HACKATHON.pdb
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/obj/Debug/netcoreapp2.2/HACKATHON.csprojAssemblyReference.cache
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/obj/Debug/netcoreapp2.2/HACKATHON.csproj.CoreCompileInputs.cache
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/obj/Debug/netcoreapp2.2/HACKATHON.AssemblyInfoInputs.cache
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/obj/Debug/netcoreapp2.2/HACKATHON.AssemblyInfo.cs
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/obj/Debug/netcoreapp2.2/HACKATHON.dll
+c:/Users/balla/Documents/coding-dojo/C#/HACKATHON/obj/Debug/netcoreapp2.2/HACKATHON.pdb
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/bin/Debug/netcoreapp2.2/HACKATHON.deps.json
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/bin/Debug/netcoreapp2.2/HACKATHON.runtimeconfig.json
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/bin/Debug/netcoreapp2.2/HACKATHON.runtimeconfig.dev.json
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/bin/Debug/netcoreapp2.2/HACKATHON.dll
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/bin/Debug/netcoreapp2.2/HACKATHON.pdb
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/obj/Debug/netcoreapp2.2/HACKATHON.csprojAssemblyReference.cache
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/obj/Debug/netcoreapp2.2/HACKATHON.csproj.CoreCompileInputs.cache
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/obj/Debug/netcoreapp2.2/HACKATHON.AssemblyInfoInputs.cache
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/obj/Debug/netcoreapp2.2/HACKATHON.AssemblyInfo.cs
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/obj/Debug/netcoreapp2.2/HACKATHON.dll
+/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/obj/Debug/netcoreapp2.2/HACKATHON.pdb

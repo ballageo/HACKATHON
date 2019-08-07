@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\balla\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/Users/jasonbarron/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\balla\\Documents\\coding-dojo\\C#\\HACKATHON\\HACKATHON.csproj",
+      "projectUniqueName": "/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/HACKATHON.csproj",
       "projectName": "HACKATHON",
-      "projectPath": "C:\\Users\\balla\\Documents\\coding-dojo\\C#\\HACKATHON\\HACKATHON.csproj",
-      "packagesPath": "C:\\Users\\balla\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\balla\\Documents\\coding-dojo\\C#\\HACKATHON\\obj\\",
+      "projectPath": "/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/HACKATHON.csproj",
+      "packagesPath": "/Users/jasonbarron/.nuget/packages/",
+      "outputPath": "/Users/jasonbarron/Documents/Code_Work/Coding Dojo/C#/Hackathon/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\balla\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/jasonbarron/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
